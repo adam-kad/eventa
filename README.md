@@ -1,5 +1,9 @@
 # Eventa
 
+[![PyPI](https://img.shields.io/pypi/v/eventa.svg)](https://pypi.org/project/eventa/)
+[![Python versions](https://img.shields.io/pypi/pyversions/eventa.svg)](https://pypi.org/project/eventa/)
+[![License](https://img.shields.io/pypi/l/eventa.svg)](https://github.com/adam-kad/eventa/blob/master/LICENSE)
+
 Lightweight, local-first event analytics for Python applications — no external services required.
 
 ```python
