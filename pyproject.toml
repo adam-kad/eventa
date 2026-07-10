@@ -9,8 +9,12 @@ description = "Lightweight, local-first event analytics SDK for Python applicati
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
-authors = [{ name = "Adam Kad" }]
+authors = [{ name = "adam-kad" }]
 dependencies = ["sqlalchemy>=2.0"]
+
+[project.urls]
+Homepage = "https://github.com/adam-kad/eventa"
+Repository = "https://github.com/adam-kad/eventa"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.6", "mypy>=1.10"]
