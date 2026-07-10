@@ -14,7 +14,10 @@ analytics = Analytics(database="sqlite:///eventa.db")
 analytics.track(
     event="payment_success",
     user="telegram:123456",
-    properties={"plan": "premium", "price": 299},
+    properties={
+        "plan": "premium", 
+        "price": 299
+    },
 )
 ```
 
@@ -31,8 +34,16 @@ from eventa import Analytics
 
 analytics = Analytics()  # defaults to sqlite:///eventa.db
 
-analytics.track(event="login", user="user_123")
-analytics.track(event="button_click", user="user_123", properties={"button": "buy"})
+analytics.track(
+    event="login",
+    user="user_123",
+)
+
+analytics.track(
+    event="button_click",
+    user="user_123",
+    properties={"button": "buy"},
+)
 
 analytics.count_events()                 # total events
 analytics.count_events(event="login")    # events of a given name
